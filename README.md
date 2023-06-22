@@ -38,10 +38,13 @@ Using the following repositories and resource, we made guildline referencing cha
 Let's examine each conversation against the guidelines point-by-point. 
 ### chat 1
 <img src="asset/aag_1.png" width="800">
+
 ### chat 2
 <img src="asset/aag_2.png" width="800">
+
 ### chat 3
 <img src="asset/aag_3.png" width="800">
+
 ### chat 4
 <img src="asset/aag_4.png" width="800">
 
