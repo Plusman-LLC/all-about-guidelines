@@ -46,5 +46,9 @@ Let's examine each conversation against the guidelines point-by-point.
 <img src="asset/aag_4.png" width="800">
 
 ## Local Research Envirnment
+### Proposed research envirnment. 
+- Completely separated from internet
+- Commercially avairable personal computer
+- Documents for AI reference are arbitrary
 <img src="asset/dep.png" width="800">
 
