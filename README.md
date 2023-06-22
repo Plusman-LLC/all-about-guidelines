@@ -5,44 +5,32 @@ However, there are several problems with using the chat tool in a medical.
   
  
 ## Hallucination
+#### Mistake in detail
 The problem of Hallucination is serious.
 Hallucination is a problem that chat AI responds plausibly with false information.
 For example, ask about the content of Fleischner's guidelines.
 We’ve got a very specific and detailed response as shown here. 
 
-<img src="asset/chatgpt_1.png" width="500">
+<img src="asset/chatgpt_1.png" width="800">
 
 However, it was found there were some details thought to be a bit mistake.
 For example, the Fleischner’s guidelines clearly state that follow-up CT scan is after 3 months for solid nodules larger than 8 mm, but the response was 3,6,12 months.
 
- 
+#### Completely fake
+Sequentially asked about nodules found in lung cancer screening. 
+<img src="asset/chatgpt_2.png" width="800">
+It answered that Fleischner Society has recommendations in their guidelines for nodules detected in lung cancer screening programs. 
+But they don’t. They only recommends adherence to the ACR Lang-RADS. 
+So, Chat AI’s answer was all fake. 
 
-- pydicom >= 2.1
-- numpy >= 1.20 
-- scipy >= 1.6 
-- scikit-image >= 0.18.1 
-- scipy >= 1.6 
-- opencv-python >= 4.5 
-- simpleitk >= 1.2
-- pytorch (cuda enabled)
 
-## Hardware 
-NVIDIA GPU (>=12GB) with CUDA toolkit
+## All About Guideline Demo
+Using the following repositories and resource, we made guildline referencing chat tool. 
+- <a href="https://github.com/lm-sys/FastChat" target="_blank">lm-sys/FastChat</a>
+- <a href="https://github.com/hwchase17/langchain" target="_blank">hwchase17/langchain</a>
+- <a href="https://pubs.rsna.org/doi/full/10.1148/radiol.2017161659" target="_blank">Guidelines for Management of Incidental Pulmonary Nodules Detected on CT Images: From the Fleischner Society 2017</a>
 
-## Usage
 
-1\. Put synthetic raw DICOM data files into "ios/input" folder (any folder structure is allowed but one series must be in the same folder)
+### Demo
+<img src="asset/Animation.gif" width="400"> <img src="asset/Animation_2.gif" width="400">
 
-2\. From command line
-```cmd
->>>python cmd.py 
-``` 
-3\. The synthetic MRA output will be in ios/output with the same folder structure.
-## Examples 
-The test input data (magic_sample) is provided here <a href="https://www.dropbox.com/s/fw2ghn5poriac9l/magic_sample.zip?dl=0" target="_blank">magic_sample</a>.
-
-Download & unzip, and copy in ios/input. Then, 
-```cmd
->>>python cmd.py 
-``` 
-Output sample will be created in ios/output.
