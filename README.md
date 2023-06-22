@@ -10,7 +10,7 @@ Hallucination is a problem that chat AI responds plausibly with false informatio
 For example, ask about the content of Fleischner's guidelines.
 We’ve got a very specific and detailed response as shown here. 
 
-![demo](https://github.com/Plusman-LLC/all-about-guidelines/tree/main/asset/chatgpt_1.png)
+![demo](asset/chatgpt_1.png)
 
 However, it was found there were some details thought to be a bit mistake.
 For example, the Fleischner’s guidelines clearly state that follow-up CT scan is after 3 months for solid nodules larger than 8 mm, but the response was 3,6,12 months.
